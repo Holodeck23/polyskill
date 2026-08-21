@@ -13,6 +13,7 @@
   ],
   "scripts": {
     "build": "tsc",
+    "test": "node --import tsx --test test/portable-name-validation.test.ts",
     "dev": "tsx src/cli.ts",
     "prepublishOnly": "npm run build",
     "clean": "rm -rf dist"
