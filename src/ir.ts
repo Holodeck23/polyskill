@@ -17,7 +17,7 @@ export interface SkillIR {
 }
 
 export interface Identity {
-  /** Skill name. lowercase a-z + hyphens. Must match directory name. */
+  /** Skill name. Lowercase letters, numbers, and hyphens. Must match directory name. */
   name: string;
 
   description: {

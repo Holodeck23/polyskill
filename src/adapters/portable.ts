@@ -107,11 +107,11 @@ export class PortableAdapter implements Adapter {
     if (!ir.identity.name) {
       issues.push({ severity: 'error', field: 'identity.name', message: 'name is required' });
     }
-    if (!/^[a-z][a-z0-9-]*$/.test(ir.identity.name)) {
+    if (!/^[a-z0-9][a-z0-9-]*$/.test(ir.identity.name)) {
       issues.push({
         severity: 'error',
         field: 'identity.name',
-        message: 'name must be lowercase a-z + hyphens',
+        message: 'name must be lowercase a-z, 0-9 + hyphens',
       });
     }
     if (!ir.identity.description.full) {
