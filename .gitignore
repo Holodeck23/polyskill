@@ -18,6 +18,8 @@ node_modules/
 !skill/dist/**
 !examples/hello-skill/dist/
 !examples/hello-skill/dist/**
+!examples/go-bananas/dist/
+!examples/go-bananas/dist/**
 
 # README copy from gumroad kit — Gumroad polyskill-kit README is the
 # distribution artifact; the repo README is the canonical one.

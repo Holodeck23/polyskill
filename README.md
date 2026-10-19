@@ -155,6 +155,13 @@ polyskill adapters                      # list installed runtime adapters
 
 `examples/hello-skill/` exercises every cross-runtime primitive (dynamic injection, MCP dependencies, bash patterns, front-loaded descriptions). The `dist/` folder is committed so you can see what polyskill produces from a source definition without running anything.
 
+`examples/go-bananas/` is a real, everyday skill: an end-of-session closer. Type `/go-bananas` (Claude Code) or `$go-bananas` (Codex) and it either finishes every outstanding task it can, or updates docs, pushes what's safe, and writes one copy-paste handover prompt for a fresh session. It's set to manual-only, so it never fires on its own.
+
+```bash
+cp -r examples/go-bananas/dist/claude/go-bananas ~/.claude/skills/go-bananas
+cp -r examples/go-bananas/dist/codex/go-bananas ~/.agents/skills/go-bananas
+```
+
 ### Authoring your own portable skill
 
 ```bash
